@@ -1,63 +1,63 @@
-# International Purchase System
+# Sistema de Compras Internacional
 
-This project implements a comprehensive international purchase system focused on tax calculation features specifically for imports in the USA and Brazil. The system aims to streamline the purchasing process while ensuring compliance with local tax regulations.
+Este projeto implementa um sistema abrangente de compras internacionais focado em recursos de cálculo de impostos especificamente para importações nos EUA e Brasil. O sistema visa simplificar o processo de compra, garantindo conformidade com as regulamentações fiscais locais.
 
-## Features
+## Recursos
 
-- **Country-specific Tax Calculation**: Automatically calculates import taxes based on the destination country.
-- **User-friendly Interface**: Simple and intuitive interface for users to execute purchases.
-- **Multi-currency Support**: Handles transactions in different currencies, converting based on current exchange rates.
-- **Secure Transactions**: Implements security protocols to protect user information and payment details.
+- **Cálculo de Impostos Específicos por País**: Calcula automaticamente os impostos de importação com base no país de destino.
+- **Interface Amigável**: Interface simples e intuitiva para os usuários executarem compras.
+- **Suporte Multi-moeda**: Trata transações em diferentes moedas, convertendo com base nas taxas de câmbio atuais.
+- **Transações Seguras**: Implementa protocolos de segurança para proteger as informações do usuário e detalhes de pagamento.
 
-## Getting Started
+## Começando
 
-### Prerequisites
+### Pré-requisitos
 
-- Node.js v14 or higher
-- npm v6 or higher
+- Node.js v14 ou superior
+- npm v6 ou superior
 
-### Installation
+### Instalação
 
-1. Clone the repository:
+1. Clone o repositório:
    ```bash
    git clone https://github.com/Dudazabel/SOLID-O.git
    ```
-2. Navigate to the project directory:
+2. Navegue até o diretório do projeto:
    ```bash
    cd SOLID-O
    ```
-3. Install dependencies:
+3. Instale as dependências:
    ```bash
    npm install
    ```
 
-### Usage
+### Uso
 
-Run the application with:
+Execute a aplicação com:
 ```bash
 npm start
 ```
 
-### Tax Calculation
+### Cálculo de Impostos
 
-#### USA Tax Calculation
-- Import taxes in the USA are generally calculated based on the value of the goods and the tariff classification.
-- The system retrieves the current tax rates from official sources to calculate the total tax required.
+#### Cálculo de Impostos nos EUA
+- Os impostos de importação nos EUA são geralmente calculados com base no valor das mercadorias e na classificação tarifária.
+- O sistema recupera as taxas de imposto atuais de fontes oficiais para calcular o imposto total necessário.
 
-#### Brazil Tax Calculation
-- Brazil's import taxes include Import Duty (II), Industrialized Products Tax (IPI), and Merchandise and Service Circulation Tax (ICMS).
-- The application calculates each type of tax based on the imported product's value and applicable rates.
+#### Cálculo de Impostos no Brasil
+- Os impostos de importação do Brasil incluem Imposto de Importação (II), Imposto sobre Produtos Industrializados (IPI) e Imposto sobre Circulação de Mercadorias e Serviços (ICMS).
+- A aplicação calcula cada tipo de imposto com base no valor do produto importado e nas alíquotas aplicáveis.
 
-## API Reference
+## Referência de API
 
-- `GET /api/calculateTax`: Calculate the import tax for a specific country and value.
+- `GET /api/calculateTax`: Calcula o imposto de importação para um país e valor específicos.
 
-### Example Request
+### Exemplo de Requisição
 ```bash
 GET /api/calculateTax?country=USA&value=1000
 ```
 
-### Example Response
+### Exemplo de Resposta
 ```json
 {
   "country": "USA",
@@ -66,24 +66,24 @@ GET /api/calculateTax?country=USA&value=1000
 }
 ```
 
-## Contributing
+## Contribuindo
 
-We welcome contributions! Please follow these steps:
-1. Fork the repo.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a Pull Request.
+Recebemos contribuições! Por favor, siga estas etapas:
+1. Faça um fork do repositório.
+2. Crie uma nova branch (`git checkout -b feature-branch`).
+3. Faça suas alterações e confirme-as (`git commit -m 'Adicionar novo recurso'`).
+4. Envie para a branch (`git push origin feature-branch`).
+5. Abra um Pull Request.
 
-## License
+## Licença
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para detalhes.
 
-## Acknowledgements
+## Agradecimentos
 
-- Thanks to everyone who contributed to the project!
-- Special thanks to contributors and collaborators that made this project possible.
+- Obrigado a todos que contribuíram para o projeto!
+- Agradecimentos especiais aos colaboradores que tornaram este projeto possível.
 
 ---
 
-* This README was generated on 2026-02-26 16:52:12 UTC *
+* Este README foi gerado em 2026-02-26 16:52:12 UTC *
