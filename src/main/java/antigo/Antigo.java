@@ -10,7 +10,6 @@ public class Antigo {
                                                  double valor) {
 
                 double taxa = 0;
-                double imposto = 0;
 
                 // =========================
                 // Taxa base fixa
@@ -58,22 +57,12 @@ public class Antigo {
                 }
 
                 // =========================
-                // Impostos por destino
-                // =========================
-                if (paisDestino.equals("BRASIL")) {
-                    imposto = valor * 0.15;
-                } else if (paisDestino.equals("EUA")) {
-                    imposto = valor * 0.10;
-                }
-
-                // =========================
                 // Resultado final
                 // =========================
-                double total = valor + taxa + imposto;
+                double total = valor + taxa;
 
                 System.out.println("Valor original: " + valor);
                 System.out.println("Taxas: " + taxa);
-                System.out.println("Impostos: " + imposto);
                 System.out.println("Total final: " + total);
 
                 return total;

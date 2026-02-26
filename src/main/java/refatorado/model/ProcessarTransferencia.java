@@ -1,14 +1,14 @@
 package refatorado.model;
 
-public class ProcessarTranferencia {
+public class ProcessarTransferencia {
 
-    public String tipoCliente;
-    public String tipoTransferencia;
-    public String paisOrigem;
-    public String paisDestino;
-    public double valor;
+    private String tipoCliente;
+    private String tipoTransferencia;
+    private String paisOrigem;
+    private String paisDestino;
+    private double valor;
 
-    public ProcessarTranferencia(String tipoCliente, String tipoTransferencia, String paisOrigem, String paisDestino, double valor) {
+    public ProcessarTransferencia(String tipoCliente, String tipoTransferencia, String paisOrigem, String paisDestino, double valor) {
         this.tipoCliente = tipoCliente;
         this.tipoTransferencia = tipoTransferencia;
         this.paisOrigem = paisOrigem;
