@@ -1,4 +1,4 @@
-package refatorado.model.tranferemcia;
+package refatorado.model.transferencia;
 
 import refatorado.model.CalcularTaxa;
 import refatorado.model.ProcessarTransferencia;
